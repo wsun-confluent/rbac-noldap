@@ -1,5 +1,5 @@
 # Simple RBAC Demo without LDAP
-Minimal Confluent Server configuration to experiment with MDS/RBAC
+Minimal Confluent Server configuration to experiment with MDS/RBAC.  Tested with CP 5.5.1.
 
 ## Initialization
 1. Generate MDS token keypair and `login.properties` file to `/tmp`
