@@ -99,7 +99,6 @@ org.apache.kafka.common.errors.TopicAuthorizationException: Not authorized to ac
 
 ## Additional things to try
 * Remove the user `mds:mds1` from `login.properties` and restart Kafka.  Are you still able to do `confluent login`? Are you still able to produce/consume as `User:weikang`?
-* Try to authenticate with `client_bad.properties`.  What error is seen?
 * Add a `PLAINTEXT` listener and attempt to produce/consume.  What additional roles are needed? (Hint: `User:ANONYMOUS`)
 * Add/uncomment the `TOKEN` listener to experiment with connecting CP components.  Once this listener is up, try to authenticate with `client_token.properties` when connecting to the `TOKEN` listener.
 * Regenerate the MDS keypair but specify 1024-bit RSA length instead of 2048 (see `init.sh`).  Does Kafka/MDS still start?  What happens with `confluent login`?
