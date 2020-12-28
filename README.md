@@ -47,7 +47,7 @@ confluent iam rolebinding create --kafka-cluster-id $KAFKA_CLUSTER_ID --principa
 ```
 6. List the role
 ```sh
-confluent iam rolebinding list --kafka-cluster-kd $KAFKA_CLUSTER_ID --principal 'User:mds'
+confluent iam rolebinding list --kafka-cluster-id $KAFKA_CLUSTER_ID --principal 'User:mds'
 ```
 7. Remove `User:mds` from `super.users` in `server.properties`
 8. Restart Kafka
