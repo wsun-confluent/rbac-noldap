@@ -62,7 +62,7 @@ confluent iam rolebinding create --kafka-cluster-id $KAFKA_CLUSTER_ID --principa
 ```
 3. List the roles
 ```sh
-confluent iam rolebinding list --kafka-cluster-kd $KAFKA_CLUSTER_ID --principal 'User:weikang'
+confluent iam rolebinding list --kafka-cluster-id $KAFKA_CLUSTER_ID --principal 'User:weikang'
 ```
 
 ## Create topics
